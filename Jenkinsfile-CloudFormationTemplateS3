@@ -5,7 +5,7 @@ pipeline
   {
 	stage ('Cloud formation template to create S3 bucket.')
 	{
-		Steps
+		steps
 		{
 			withAWS(credentials: 'awsrootaccesskey', region: 'us-east-2') {
 				sh 'aws cloudformation create-stack --stack-name MyS3BucketCloudFormation --template-body file://S3CloudFormation.json'
