@@ -1,0 +1,7 @@
+{
+    "Resources": {
+        "MyFirstCloudFormationS3Bucket": {
+            "Type": "AWS::S3::Bucket"
+        }
+    }
+}
